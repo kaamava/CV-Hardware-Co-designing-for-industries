@@ -1,3 +1,10 @@
 # CV-Hardware-co-design-for-indusries
-This is a repository which is used for storing code and results of the continuing project of CV-Hardware co-designing for iron industries.
-![Uploading 系统框图.png…]()
+
+## Phase1：Porting YOLOv5 model to FPGA and optimizing
+![系统框图_副本](https://github.com/kaamava/CV-Hardware-co-design-for-indusries/assets/106901273/3139a694-ff16-4f42-a879-0e9fd3065ddd)
+
+
+
+
+
+

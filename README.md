@@ -10,8 +10,9 @@ FPGAs have many advantages regarding unified **design and optimization capabilit
 Translating the network structure of YOLOv5 into **hardware description language (HDL)** code for FPGA is crucial for the porting process, and this can be achieved using High-Level Synthesis (HLS) tools.Simultaneously, **collaborative optimization** on the PC and FPGA sides can be achieved through algorithmic co-design, enhancing both the efficiency and scalability of the algorithm.
 ![系统框图_副本](https://github.com/kaamava/CV-Hardware-co-design-for-indusries/assets/106901273/3139a694-ff16-4f42-a879-0e9fd3065ddd)
 
+By judiciously porting the algorithm and conducting hardware optimizations, we can make a more effective attempt to integrate machine vision applications into practical steel production processes.
 
-
+## Phase2：Employing YOLOv5 to the practical use of clay gun machines
 
 
 

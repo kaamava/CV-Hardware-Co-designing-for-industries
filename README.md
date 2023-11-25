@@ -5,7 +5,9 @@ The YOLO (You Only Look Once) algorithm serves as a representative of single-sta
 
 In recent years, with the rapid development of edge computing and intelligent terminals, there is widespread attention towards deploying artificial intelligence models on embedded devices. In the context of this project, which focuses on the application of computer vision in a steelworks environment, our initial investigation delves into the hardware adaptation and optimization of YOLOv5, through deployeing it on FPGA (Field-Programmable Gate Array).
 
+The YOLO network consists of several convolutional layers and fully connected layers. The number of convolutional layers is 24, followed by two fully connected layers. The convolutional layer is used to extract the features of the original image, and the fully connected layer is used to predict the probability and coordinates of the output. Among them, the alternating 1 × 1 convolutional layers are used to reduce the feature map space size of the previous layers. The final output of the YOLO network is still a 7 × 7 × 30 tensor.
 
+FPGAs have many advantages regarding unified design and optimization capabilities of arithmetic power, speed, and resources for CNN. The FPGA can call and optimize hardware resources at the trigger level, which can precisely adjust the algorithm structure at the trigger and logic gate level to ensure the precise control of arithmetic power and resources. The rich clock network and routing resources inside the FPGA can be designed for speed and hardware resource consistency to ensure timing convergence and resource coordination.
 
 ![系统框图_副本](https://github.com/kaamava/CV-Hardware-co-design-for-indusries/assets/106901273/3139a694-ff16-4f42-a879-0e9fd3065ddd)
 

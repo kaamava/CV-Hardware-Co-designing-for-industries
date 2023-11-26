@@ -13,6 +13,24 @@ Translating the network structure of YOLOv5 into **hardware description language
 By judiciously porting the algorithm and conducting hardware optimizations, we can make a more effective attempt to integrate machine vision applications into practical steel production processes.
 
 ## Phase2：Employing YOLOv5 to the practical use of clay gun machines
+The first approach involves directly labeling moving blocks and stationary blocks, training an object detection model. The objective identification involves computing the pixel difference between the midpoints of the two target boxes.
 
+The second approach is as follows:
 
+Step 1: Label moving blocks, stationary blocks, and the mud gun disk surface, then train an object detection model.
+
+Step 2: Mark feature sub-blocks within the moving blocks' images and the stationary blocks' images. Train a segmentation model for these feature sub-blocks. Alternatively, use the entire mud gun disk surface as the base image, mark moving feature sub-blocks and stationary feature sub-blocks, and train a segmentation model on this image.
+
+Step 3.1: Use the framed images from the original video as input. Based on the object detection model, identify targets for moving blocks, stationary blocks, and the mud gun disk surface.
+
+Step 3.2: Based on the predicted target box's center point, offset left/right and up/down by a certain number of pixels to generate candidate boxes. The purpose is to enlarge the current predicted box, avoiding potential issues if the prediction box is too small. Use the candidate box's image as input, and based on the segmentation model, obtain segmentation results for moving feature sub-blocks and stationary feature sub-blocks.
+
+Step 4: Recognize the pixel difference between the midpoints of the two segmentation results. 
+![val_batch0_labels_副本](https://github.com/kaamava/CV-Hardware-co-design-for-industries/assets/106901273/6bedea1f-8f67-4ef4-a395-46a215496b50)
+![train_batch0_副本](https://github.com/kaamava/CV-Hardware-co-design-for-industries/assets/106901273/a5ee23f7-e372-40bc-b2b2-703f4d80c10a)
+![results_副本](https://github.com/kaamava/CV-Hardware-co-design-for-industries/assets/106901273/af00afbd-df66-41ad-b7a3-16425fecc82f)
+
+## Phase3：Industrial control at the hardware leve
+
+![image](https://github.com/kaamava/CV-Hardware-co-design-for-industries/assets/106901273/0bda7ab9-7b7a-4f1b-9e81-77df0575a112)
 

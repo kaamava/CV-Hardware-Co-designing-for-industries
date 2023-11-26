@@ -31,6 +31,7 @@ Step 4: Recognize the pixel difference between the midpoints of the two segmenta
 ![results_副本](https://github.com/kaamava/CV-Hardware-co-design-for-industries/assets/106901273/af00afbd-df66-41ad-b7a3-16425fecc82f)
 
 ## Phase3：Industrial control at the hardware leve
+This is an ongoing work in progress.
 
 ![image](https://github.com/kaamava/CV-Hardware-co-design-for-industries/assets/106901273/0bda7ab9-7b7a-4f1b-9e81-77df0575a112)
 
